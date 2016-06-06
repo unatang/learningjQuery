@@ -1,10 +1,7 @@
 ﻿$(document).ready(function(){
-    var $p = $("#content > p");
-    for(var i=0; i<$p.length; i++){
-        $("#content > p").children().eq(i).mouseenter(function(){
-            var source = this.attr("source");
-            var $placeholder = $("#placeholder > img");
-            $placeholder.attr("src", source);
+    $("#content > p").each(function(){   //选择p元素，对P元素遍历
+        $(this).mouseover(function(){    //绑定事件
+            $("#placeholder img").attr("src", $(this).attr("source"));
         });
-    }
+    });
 });
