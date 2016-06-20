@@ -1,0 +1,41 @@
+﻿body
+{
+    padding: 0px;
+    margin: 0px;
+}
+#one
+{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+#content
+{
+    border: 1px; solid black;
+}
+p
+{
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+#textarea
+{
+    padding: 0px;
+    margin-left: 10px;
+    width: 90%;
+    height: 10%;
+}
+#button
+{
+    margin: 12px;
+    position: relative;
+    
+}
+#header
+{
+    border: 1px solid black;
+    width: 80%;
+    height: 40%;
+    margin-left: 10px;
+}
