@@ -1,41 +1,51 @@
-﻿body
+﻿*
 {
     padding: 0px;
     margin: 0px;
 }
 #one
 {
-    width: 80%;
-    height: 100%;
+    width: 1000px;
+    height: 550px;
     margin: 0 auto;
+    margin-top: 20px;
+    background: #D4CED3;
 }
 #content
 {
-    border: 1px; solid black;
+    height: 38%;
 }
 p
 {
-    font-family: Arial;
-    font-size: 20px;
-    text-align: center;
+    padding: 5px;
+    font-size: 15px;
 }
 #textarea
 {
-    padding: 0px;
-    margin-left: 10px;
     width: 90%;
-    height: 10%;
+    height: 60%;
+    display: block;
+    margin: 0 auto;
+}
+#textarea:focus
+{
+    background-color:#F5F1F1;
+    border: 2px solid #22A8C7;
 }
 #button
 {
     margin: 12px;
-    position: relative;
+    float: right;
     
 }
 #header
 {
-    border: 1px solid black;
-    width: 80%;
+    width: 90%;
     height: 40%;
-    margin-left: 10px;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    background: #F5F1F1;
+    
 }
