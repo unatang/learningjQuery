@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" />
+
+	<script src="jquery-3.0.0.js"></script>
+	
+	<script>
+    /*动画*/
+        $(document).ready(function(){
+            var animate = function(){
+                $("#content").animate({right: "400px"}, 1500)
+                             .animate({right: "800px"}, 1500)
+                             .animate({right: "1200px"}, 1500)
+                             .animate({right: "0px"}, 1500);
+            }
+            //循环执行
+            window.setInterval(animate, 6000);
+         });
+	</script>
+	<style type="text/css">
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    #box
+    {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        overflow: hidden;
+    }
+    #content
+    {
+        width: 400%;
+        height: 300px;
+        position: relative;
+     }
+     img
+     {
+        float: left;
+     }
+	</style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="content">
+            <img src="images/1.jpg" alt="bank" id="banner_img1" />
+            <img src="images/2.jpg" alt="coffee" id="banner_img2"/>
+            <img src="images/3.jpg" alt="fire" id="banner_img3"/>
+            <img src="images/4.jpg" alt="flower" id="banner_img4"/>
+        </div>
+    </div>
+</body>
+</html>
